@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" content="width=device-width,initial-scale=1">
+    <title>
+        Create your To-Do List
+    </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script rel="javascript" type="text/javascript" src="js.js"></script>
+</head>
+
+<body>
+<p class="head" id="head1"><br>To-Do List</p> 
+<br>
+
+<!--Input-->
+<center><input id="myInput" type="text" placeholder="Add here" size="40px">
+<br><br>
+
+<!--Button-->
+<div class="navbar">
+    <a onclick="addList()" >    +    </a>
+    <a onclick="remove()" id="removeButton">Clear</a>
+
+</div>
+</center>
+<br>
+<!--UL List-->
+<div class="container">
+
+    <ul id="myUL" >
+        <li onclick="removeLi(event)" id="0">
+            <input type="checkbox" id="check" placeholder="box">
+            <span id="spanText" class="text">Butter</span>
+            <span id="close" class="close" onclick="this.parentNode.remove(); return false;">&#215;</span>
+            
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>
